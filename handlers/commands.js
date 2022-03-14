@@ -12,6 +12,7 @@ module.exports = (bot, reload) => {
             client.commands.set(command.name, command)
         })
     })
+    
     if(client.commands.size == 1) console.log("Loaded 1 command!")
     else console.log(`Loaded ${client.commands.size} commands!`)
 }
